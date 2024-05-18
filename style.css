@@ -28,6 +28,82 @@ a {
     margin: 0 auto;
 }
 
+@media screen and (max-width: 1280px ) {
+    
+    .container {
+        max-width: 720px;
+        margin: 0 auto;
+    }
+
+    .hero h1 {
+        font-size: 28px !important;
+    }
+    .hero .buttons {
+        flex-direction: column;
+    }
+    .demo {
+        justify-content: flex-start !important;
+    }
+    .hero__img {
+        width: 80% !important;
+    }
+
+    .about__inner, .arm_kassa__inner, .arm_main__inner {
+        grid-template-columns: 1fr !important;
+        justify-items: center;
+        gap: 20px !important;
+
+    }
+
+    .arm_kassa .img_block {
+        grid-row: 1; /* NEW */
+    }
+
+    .conf__blocks {
+        grid-template-columns: 1fr 1fr !important;
+    }
+
+    .download__inner {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+
+    }
+    .contact__inner {
+        grid-template-columns: 1fr !important;
+
+    }
+}
+
+
+@media screen and (max-width: 800px ) {
+    .container {
+        margin: 0 40px !important;
+    }
+    .hero__img {
+        display: none;
+    }
+    .hero__inner {
+        grid-template-columns: 1fr !important;
+    }
+    .menu {
+        display: none !important;
+        min-width: 100%;
+    }
+    .header {
+        flex-wrap: wrap;
+    }
+    #burger {
+        display: block !important;
+        cursor: pointer;
+    }
+}
+
+#burger {
+    width: 40px;
+    height: 40px;
+    display: none;
+}
+
 header {
     width: 100%;
     position: absolute;
