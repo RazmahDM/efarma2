@@ -96,6 +96,25 @@ a {
         display: block !important;
         cursor: pointer;
     }
+
+    .conf__blocks {
+        grid-template-columns: 1fr !important;
+    }
+    .subfooter {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .contact__block h4 {
+        word-wrap: break-word;
+    }
+
+    .email__block {
+        align-items: flex-start !important;
+        font-size: 24px !important;
+    }
+    .contact__block h5 {
+        font-size: 20px !important;
+    }
 }
 
 #burger {
