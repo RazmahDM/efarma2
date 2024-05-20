@@ -103,6 +103,7 @@ a {
     .subfooter {
         flex-direction: column;
         gap: 10px;
+        align-items: flex-start !important;
     }
     .contact__block h4 {
         word-wrap: break-word;
@@ -114,6 +115,26 @@ a {
     }
     .contact__block h5 {
         font-size: 20px !important;
+    }
+
+    .contact__inner {
+        padding: 30px 30px !important;
+    }
+    #menu.active {
+        display: flex !important;
+    }
+    #menu {
+        margin-top: 20px;
+        flex-direction: column;
+        gap: 0px !important;
+        background: #fff;
+        color: #333 !important;
+        border-radius: 10px;
+        box-shadow: 0px 10px 30px #aaa;
+    }
+    #menu a {
+        display: block;
+        padding: 40px 20px;
     }
 }
 
